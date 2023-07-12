@@ -2,21 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Helvetica", "Courier", "Arial", "Calibri";
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  );
+  background: linear-gradient(90deg, rgb(23, 22, 22) 0%, rgb(67, 67, 69) 100%);
 }
 .todo-app {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 520px;
   min-height: 600px;
   background: #161a2b;
@@ -29,7 +24,7 @@ body {
 h1 {
   margin: 32px 0;
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .complete {
@@ -44,7 +39,7 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid #3d0af3;
   outline: none;
   width: 320px;
   background: transparent;
@@ -61,11 +56,7 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background: linear-gradient(90deg, rgb(36, 20, 216) 0%, rgb(9, 9, 224) 100%);
   color: #fff;
   text-transform: capitalize;
 }
@@ -97,18 +88,19 @@ h1 {
   color: #fff;
   background: linear-gradient(
     90deg,
-    rgba(255, 118, 20, 1) 0%,
-    rgba(255, 84, 17, 1) 100%
+    rgb(79, 205, 88) 0%,
+    rgb(28, 214, 71) 100%
   );
 
   padding: 16px;
   border-radius: 5px;
   width: 90%;
+  font-size: 18px;
 }
 
 /*
 colour pattern for rows
-*/
+
 .todo-row:nth-child(4n + 1) {
   background: linear-gradient(
     90deg,
@@ -132,6 +124,7 @@ colour pattern for rows
     rgba(17, 122, 255, 1) 100%
   );
 }
+*/
 
 .icons {
   display: flex;

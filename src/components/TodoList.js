@@ -12,9 +12,13 @@ function TodoList() {
       return;
     }
 
-    const newTodos = [todo, ...todos];
+    // add tasks to bottom of list instead of top
+    setTodos((prevTodos) => {
+      return prevTodos.concat(todo);
+    });
 
-    setTodos(newTodos);
+    //const newTodos = [todo, ...todos];
+    //setTodos(newTodos);
     //console.log(todo, ...todos);
   };
 
